@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="">
+
+    <link rel="stylesheet" href="style.css">
+	<title>shop</title>
+</head>
+<body>
+	<section id="header">
+        <a href="#"><img src="logo.png" class="logo"></a>
+
+        <nav>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </nav>
+     </section>
+
+     <div class="sidebar">
+         <!-- LOGO -->
+        <a href="#" class="logo-box">
+           <div class="logo-name">
+                <h3> <img src="boxes.png" style="width: 23px; height: 23px;"> Dashboard</h3>
+            </div>
+        </a>
+
+        <!-- LIST -->
+        <ul class="sidebar-list">
+            <!-- none drop down list -->
+<!--             <li>
+                <div class="title">
+                    <a href="#" class="link">
+                        <i class="fa-solid fa-table-cells-large"></i>
+                        <span class="name">I DONT KNOW PA</span>
+                    </a>
+                </div>
+
+                <div class="sidebarmenu">
+                    <a href="#" class="link submenu-title">DashBoard</a>
+                    NON DROP DOWN LIST -->
+                <!-- </div>
+            </li> --> 
+
+             <!-- down list -->
+            <li class="dropdown active">
+                <div class="dropdown"> 
+                    <button class="dropdown-btn" onclick="toggleDropDown()">Category <img src="arrowdown.png" style="width: 20px; height: 20px; "></button> 
+                        <div class="dropdown-content" id="dropdownContent"> 
+                            <a href="#best-seller">Best Seller</a> 
+                            <a href="#new-arrivals">New Arrivals</a> 
+                            <a href="#brand-new">Brand New</a> 
+                        </div> 
+                    </div> 
+
+                    <button class="dropdown-btn"><a href="about.html" style="text-decoration: none; color: black">Terms & Conditions</a></button>
+            </li>
+
+            
+        </ul>
+     </div>
+
+
+     <!-- CELLPHONE PRODUCTS -->
+      <section id="product1" class="section-p1">
+        <div class="search-container">
+            <h3 style="position: absolute; padding-bottom: 80px; color: gold;">GO GET YOUR DREAM IPHONE NOW!</h3> 
+            <input type="text" id="search-input" placeholder="Search ...">
+            <button id="search-button">Search</button>
+        </div>
+
+        <h2 id="best-seller" style="margin-top: 10px; padding-top: 20px;"> BEST SELLER</h2>
+        <p>Most Purchase Units</p>
+        <div class="pro-container">
+            <div class="pro" id="units">
+                <img src="iphone.png" alt="Phone">
+                <div class="des">
+                    <span>iphone</span>
+                    <h5>Iphone 14 Pro Max</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>P00,000</h4>
+                </div>
+                <a href="#" onclick="addToCart('iPhone 14 Pro Max', P00000)">Add to Cart<i class="fa-solid fa-bag-shopping"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="iphone.png" alt="Phone">
+                <div class="des">
+                    <span>iphone</span>
+                    <h5>Iphone 14 Pro Max</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>P00,000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="iphone.png" alt="Phone">
+                <div class="des">
+                    <span>iphone</span>
+                    <h5>Iphone 14 Pro Max</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>P00,000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+            </div>
+        </section>
+
+        <section id="product1" class="section-p1">
+        <h2 id="new-arrivals" style="margin-top: 10px; padding-top: 20px;"> NEW ARRIVAL</h2>
+        <p>Discover What's New</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="iphone.png" alt="Phone">
+                <div class="des">
+                    <span>iphone</span>
+                    <h5>Iphone 14 Pro Max</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>P00,000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="iphone.png" alt="Phone">
+                <div class="des">
+                    <span>iphone</span>
+                    <h5>Iphone 14 Pro Max</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>P00,000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="iphone.png" alt="Phone">
+                <div class="des">
+                    <span>iphone</span>
+                    <h5>Iphone 14 Pro Max</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>P00,000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+            </div>
+        </section>
+
+
+         <section id="product1" class="section-p1">
+             <h2 id="brand-new" style="margin-top: 10px; padding-top: 20px;"> BRAND NEW</h2>
+        <p>Stay Trendy</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="iphone.png" alt="Phone">
+                <div class="des">
+                    <span>iphone</span>
+                    <h5>Iphone 14 Pro Max</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>P14,000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="iphone.png" alt="Phone">
+                <div class="des">
+                    <span>iphone</span>
+                    <h5>Iphone 14 Pro Max</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>P14,000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="iphone.png" alt="Phone">
+                <div class="des">
+                    <span>iphone</span>
+                    <h5>Iphone 14 Pro Max</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>P14,000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+            </div>
+        </section>
+    
+<script>
+    function toggleDropDown() {
+        var dropdownContent = document.getElementById("dropdownContent");
+        dropdownContent.style.display === "none" ? dropdownContent.style.display = "block": dropdownContent.style.display = "none";
+    }
+
+    //for product description
+    function showDescription(productName, price) {
+        alert("Product: " + productName +"\nPrice: " + price);
+    }
+
+    //function to add product to cart
+    function addToCart(productName, price) {
+        alert("Added to cart: \nProduct: " + productName +"\nPrice: " + price);
+    }
+</script>
+
+</body>
+</html>
